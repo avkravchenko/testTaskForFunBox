@@ -70,6 +70,25 @@ main {
     background: white;
     -webkit-clip-path: polygon(0 40.00px,40.00px 0,100% 0,100% 100%,0 100%);
     clip-path: polygon(0 40.00px,40.00px 0,100% 0,100% 100%,0 100%);
+    transition: all 1s ease-in-out;
+}
+
+.card-inside.active {
+    transform: translate(0, 5px);
+    max-width: 300px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 30px 40px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: white;
+    -webkit-clip-path: polygon(0 40.00px,40.00px 0,100% 0,100% 100%,0 100%);
+    clip-path: polygon(0 40.00px,40.00px 0,100% 0,100% 100%,0 100%);
 }
 
 
@@ -105,6 +124,10 @@ main {
     text-align: center;
 }
 
+.mark.active {
+    width: 200px;
+}
+
 .mark span{
     font-weight: 100;
     letter-spacing: .1em;
@@ -128,11 +151,23 @@ main {
 
 .m-card {
     background-color: #d91667;
+    transition: all 1s ease-in-out;
+}
+
+.m-card.active {
+    background-color: #d91667;
+    transform: translate(0, 5px);
 }
 
 .l-card {
     background-color: #b3b3b3;
 }
+
+.l-card.active {
+    background-color: #b3b3b3;
+    width: 100px;
+}
+
 
 .description {
     color: aliceblue;
@@ -164,6 +199,62 @@ a {
     width: 100vw;
     left: 0;
     overflow: hidden;
+}
+
+#firstCard {
+    transition: all 1s ease-in-out;
+}
+
+#secondCard {
+    transition: all 1s ease-in-out;
+}
+
+#firstCard:hover {
+    cursor: pointer;
+}
+
+#secondCard:hover {
+    cursor: pointer;
+}
+
+#thirdCard:hover {
+    cursor: pointer;
+}
+
+#firstCard.active  {
+    transform: translate(0, 5px);
+    max-width: 300px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 30px 40px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: white;
+    -webkit-clip-path: polygon(0 40.00px,40.00px 0,100% 0,100% 100%,0 100%);
+    clip-path: polygon(0 40.00px,40.00px 0,100% 0,100% 100%,0 100%);
+}
+
+#secondCard.active {
+    transform: translate(0, 5px);
+    max-width: 300px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 30px 40px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: white;
+    -webkit-clip-path: polygon(0 40.00px,40.00px 0,100% 0,100% 100%,0 100%);
+    clip-path: polygon(0 40.00px,40.00px 0,100% 0,100% 100%,0 100%);
 }
 
 @media screen and (max-width: 992px) {
